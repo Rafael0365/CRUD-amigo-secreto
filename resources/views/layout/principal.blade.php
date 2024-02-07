@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Amigo secreto</h1>
-        <h3>a</h3>
+        
         <div class="container">
         @yield('conteudo')
     </body>

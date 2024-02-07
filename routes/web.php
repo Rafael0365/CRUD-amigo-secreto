@@ -16,6 +16,7 @@ use App\Http\Controllers\ParticipanteController;
 Route::get('/', function () {
     return 'algo aqui';
 });
-Route::get('/participantes', [ParticipanteController::class,'show']);
+Route::get('/participantes', [ParticipanteController::class,'show'])->name('participante.lista');
 
-Route::get('/participantes/formulario', [ParticipanteController::class,'show']);
+Route::get('/participantes/formulario', [ParticipanteController::class,'index'])->name('participante.formulario');
+Route::post('/participantes/insere', [ParticipanteController::class,'create'])->name('participante.insere');
